@@ -8,7 +8,8 @@ tasks:
       # You may add additional directories to this list.
       declare -a CACHE_DIRS=(
         $HOME/.local
-        $HOME/.cabal
+        $HOME/.cache
+        $HOME/.config
       )
       for DIR in "${CACHE_DIRS[@]}"; do
         mkdir -p $(dirname /workspace/cache$DIR)

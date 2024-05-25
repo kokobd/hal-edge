@@ -11,4 +11,4 @@ RUN sudo install-packages build-essential curl libffi-dev libffi7 libgmp-dev lib
     cabal update && \
     cabal install --disable-executable-dynamic --install-method copy \
       ormolu hoogle ghcid && \
-    rm -rf $HOME/.cabal/store
+    rm -rf ~/.local/state/cabal
